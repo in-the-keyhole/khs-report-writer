@@ -36,7 +36,7 @@ public class StockReportIterator implements ReportIterator {
 
 	private final static String NA = "N/A";
 	private final String YAHOO_FINANCE_URL = "http://finance.yahoo.com/d/quotes.csv?";
-	private final String TICKERS = "s=XOM+JNJ+MSFT+GOOG+GE+INTC+AAPL+ORCL";
+	private final String TICKERS = "s=XOM+JNJ+MSFT+GOOG+GE+INTC+AAPL+ORCL+VMW+CSCO";
 	private final String PARAMS = "snd1l1yrj1";
 	private final Queue<Stock> stocks = new ConcurrentLinkedQueue<Stock>();
 
@@ -83,9 +83,10 @@ public class StockReportIterator implements ReportIterator {
 			throw new RuntimeException(e);
 		}
 
+		// parse csv result format
 		String rows[] = content.split("\r\n");
 		for (String value : rows) {
-			String[] values = value.split(",");
+			String[] values = value.split(",(?=([^\"]*\"[^\"]*\")*[^\"]*$)", -1);
 			Stock stock = new Stock();
 			stock.ticker = values[0].replaceAll("\"", "");
 			stock.name = values[1].replaceAll("\"", "");
