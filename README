@@ -1,3 +1,25 @@
+Java PDF column report writer  
+
+Description
+===========
+Create column based PDF reports. It's lightweight and fast. If you need desktop published 
+reports, then something like Jasper reports would be better.  If you need to create a column
+based report with grouping, totaling, and sub totaling, then this framework will help you out. 
+
+Examples
+========
+test folder has a couple of JUNIT tests that can be run to produce example reports
+
+
+Installation
+============
+Download and install using following mvn command 
+
+mvn install 
+
+and add the following depedency to your POM.xml 
+
+<
 
 
 
