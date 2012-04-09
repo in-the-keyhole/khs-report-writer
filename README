@@ -12,6 +12,10 @@ Test folder has a couple of JUNIT tests that can be run to produce example repor
 
 Installation
 ============
+Grab the khs-report-writer-X.X.jar in this project and put in your class path
+
+or using maven
+
 Download and install using following mvn command 
 
 mvn install 
