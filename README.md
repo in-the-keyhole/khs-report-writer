@@ -1,4 +1,5 @@
-Java PDF column report writer  
+Java PDF column report writer  [![Build Status](https://secure.travis-ci.org/in-the-keyhole/khs-report-writer.png?branch=master)](http://travis-ci.org/in-the-keyhole/khs-report-writer)
+===========
 
 Description
 ===========
