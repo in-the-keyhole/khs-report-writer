@@ -32,18 +32,18 @@ and add the following depedency to your POM.xml
 Usage Example
 =============
 
-// output writer
-ReportPDFWriter writer = new ReportPDFWriter();
-writer.setOut(new FileOutputStream(new File(new URI("file:/users/dpitt/stocks.pdf"))));
+     // output writer
+     ReportPDFWriter writer = new ReportPDFWriter();
+     writer.setOut(new FileOutputStream(new File(new URI("file:/users/dpitt/stocks.pdf"))));
 
-// create processor with factory and iterator
-// create processor with a ReportFactory and ReportIterator
-// Factory describes report format (columns,headings) 
-// Iterator turns report data into frameworks row and column type
+     // create processor with factory and iterator
+     // create processor with a ReportFactory and ReportIterator
+     // Factory describes report format (columns,headings) 
+     // Iterator turns report data into frameworks row and column type
 
-ReportProcessor processor = new ReportProcessor(new StockQuoteReportFactory(), new StockReportIterator());
-processor.writer = writer;
-processor.process();
+     ReportProcessor processor = new ReportProcessor(new StockQuoteReportFactory(), new StockReportIterator());
+     processor.writer = writer;
+     processor.process();
 
 
 
