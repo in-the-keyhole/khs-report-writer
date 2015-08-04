@@ -22,6 +22,7 @@ Download and install using following mvn command
      mvn install 
 
 and add the following depedency to your POM.xml 
+
      <dependency>
        <groupId>com.keyholesoftware</groupId>
        <artifactId>khs-report-writer</artifactId>
