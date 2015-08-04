@@ -19,15 +19,14 @@ or using maven
 
 Download and install using following mvn command 
 
-mvn install 
+     mvn install 
 
 and add the following depedency to your POM.xml 
-
-<dependency>
-  <groupId>com.keyholesoftware</groupId>
-  <artifactId>khs-report-writer</artifactId>
-  <version>1.0</version>
-</dependency>
+     <dependency>
+       <groupId>com.keyholesoftware</groupId>
+       <artifactId>khs-report-writer</artifactId>
+       <version>1.0</version>
+     </dependency>
 
 Usage Example
 =============
